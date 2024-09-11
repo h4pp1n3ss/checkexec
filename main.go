@@ -15,15 +15,31 @@ func main() {
 	filePath := os.Args[1]
 
 	// Step 1. Verify file integrity using CertUtil Tool
-	fmt.Println("[*] Starting integrity check ")
+	fmt.Println("[*] Executing certutil")
 
-	// Ran CertUtil
-	output_ct := utils.RanCertutil(filePath)
+	// "certutil", "-hashfile", filePath, hashAlgorithm
+	filteredOutputCertutil, err := utils.FilterCommandOutput("certutil", []string{"-hashfile", filePath, "SHA256"}, "valid")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
 
-	fmt.Printf("Output: \n%s\n", output_ct)
+	// Print the filtered output
+	for _, line := range filteredOutputCertutil {
+		fmt.Println(line)
+	}
 
-	// Ran SignTool
-	output_st := utils.RanSignTool(filePath)
-	fmt.Printf("Output: \n%s\n", output_st)
+	// cmd := exec.Command("signtool", "verify", "/pa", "/v", filePath)
+	fmt.Println("[*] Executing signtool")
+	filteredOutputSigntool, err := utils.FilterCommandOutput("signtool", []string{"verify", "/pa", "/v", filePath}, "valid")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	// Print the filtered output
+	for _, line := range filteredOutputSigntool {
+		fmt.Println(line)
+	}
 
 }
