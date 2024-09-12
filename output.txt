@@ -1,0 +1,53 @@
+[!] ================== SHA256 Hash:
+SHA256 hash of C:\Users\h4ppi\Documents\SysinternalsSuite\accesschk64.exe:
+843b6b1d275946f2c4569169c10c50eec0968c4b2f0bed68c50e79f828fab9f3
+CertUtil: -hashfile command completed successfully.
+
+
+[!] ==================  Signtool Verification Output:
+
+Verifying: C:\Users\h4ppi\Documents\SysinternalsSuite\accesschk64.exe
+
+Signature Index: 0 (Primary Signature)
+Hash of file (sha256): 7055E259204D99A66B087B763045F845F483F707D2685F0F0BECE38F111030AC
+
+Signing Certificate Chain:
+    Issued to: Microsoft Root Certificate Authority 2011
+    Issued by: Microsoft Root Certificate Authority 2011
+    Expires:   Sat Mar 22 19:13:04 2036
+    SHA1 hash: 8F43288AD272F3103B6FB1428485EA3014C0BCFE
+
+        Issued to: Microsoft Code Signing PCA 2011
+        Issued by: Microsoft Root Certificate Authority 2011
+        Expires:   Wed Jul 08 18:09:09 2026
+        SHA1 hash: F252E794FE438E35ACE6E53762C0A234A2C52135
+
+            Issued to: Microsoft Corporation
+            Issued by: Microsoft Code Signing PCA 2011
+            Expires:   Thu Sep 01 15:32:59 2022
+            SHA1 hash: 8740DF4ACB749640AD318E4BE842F72EC651AD80
+
+The signature is timestamped: Tue May 10 13:27:01 2022
+Timestamp Verified by:
+    Issued to: Microsoft Root Certificate Authority 2010
+    Issued by: Microsoft Root Certificate Authority 2010
+    Expires:   Sat Jun 23 19:04:01 2035
+    SHA1 hash: 3B1EFD3A66EA28B16697394703A72CA340A05BD5
+
+        Issued to: Microsoft Time-Stamp PCA 2010
+        Issued by: Microsoft Root Certificate Authority 2010
+        Expires:   Mon Sep 30 15:32:25 2030
+        SHA1 hash: 36056A5662DCADECF82CC14C8B80EC5E0BCC59A6
+
+            Issued to: Microsoft Time-Stamp Service
+            Issued by: Microsoft Time-Stamp PCA 2010
+            Expires:   Thu Jan 26 16:27:40 2023
+            SHA1 hash: E13C8ACC7C2017953D2C1E0FCD3997941D7A0E42
+
+
+Successfully verified: C:\Users\h4ppi\Documents\SysinternalsSuite\accesschk64.exe
+
+Number of files successfully Verified: 1
+Number of warnings: 0
+Number of errors: 0
+

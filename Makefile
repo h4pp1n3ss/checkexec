@@ -1,7 +1,7 @@
 # Makefile for building secwrapper on Windows
 
 # Define the Go binary name and platform-specific variables
-BINARY_NAME=secwrapper
+BINARY_NAME=checkexec
 GOOS=windows
 GOARCH=amd64
 BUILD_DIR=build
